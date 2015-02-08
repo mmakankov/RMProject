@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13FD90460A8E90B0052495AC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0523E83233814D99CF070B /* libPods.a */; };
+		84350E171A875DC000A925FF /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 84350E161A875DC000A925FF /* Recipe.m */; };
+		84350E1A1A87718B00A925FF /* RMRecipeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84350E191A87718B00A925FF /* RMRecipeTableViewCell.m */; };
 		84CE924E1A874BF10083476C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CE924D1A874BF10083476C /* main.m */; };
 		84CE92511A874BF10083476C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CE92501A874BF10083476C /* AppDelegate.m */; };
 		84CE92541A874BF10083476C /* RMProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84CE92521A874BF10083476C /* RMProject.xcdatamodeld */; };
 		84CE92571A874BF10083476C /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CE92561A874BF10083476C /* MasterViewController.m */; };
-		84CE925A1A874BF10083476C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CE92591A874BF10083476C /* DetailViewController.m */; };
 		84CE925D1A874BF10083476C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CE925B1A874BF10083476C /* Main.storyboard */; };
 		84CE925F1A874BF10083476C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CE925E1A874BF10083476C /* Images.xcassets */; };
 		84CE92621A874BF10083476C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CE92601A874BF10083476C /* LaunchScreen.xib */; };
@@ -29,6 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A0523E83233814D99CF070B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84350E111A875BD300A925FF /* RMProject-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RMProject-prefix.pch"; sourceTree = "<group>"; };
+		84350E151A875DC000A925FF /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		84350E161A875DC000A925FF /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		84350E181A87718B00A925FF /* RMRecipeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMRecipeTableViewCell.h; sourceTree = "<group>"; };
+		84350E191A87718B00A925FF /* RMRecipeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMRecipeTableViewCell.m; sourceTree = "<group>"; };
 		84CE92481A874BF10083476C /* RMProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RMProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CE924C1A874BF10083476C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84CE924D1A874BF10083476C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -37,14 +45,14 @@
 		84CE92531A874BF10083476C /* RMProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RMProject.xcdatamodel; sourceTree = "<group>"; };
 		84CE92551A874BF10083476C /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		84CE92561A874BF10083476C /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		84CE92581A874BF10083476C /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		84CE92591A874BF10083476C /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		84CE925C1A874BF10083476C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84CE925E1A874BF10083476C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		84CE92611A874BF10083476C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		84CE92671A874BF10083476C /* RMProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RMProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CE926C1A874BF10083476C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84CE926D1A874BF10083476C /* RMProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMProjectTests.m; sourceTree = "<group>"; };
+		D9B72CDE2946F50DAA83A01F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E532C03DD1C4DFAD27192155 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13FD90460A8E90B0052495AC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,12 +74,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84350E121A875D0500A925FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84CE92521A874BF10083476C /* RMProject.xcdatamodeld */,
+				84350E141A875D4E00A925FF /* Entities */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		84350E131A875D1500A925FF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84CE92551A874BF10083476C /* MasterViewController.h */,
+				84CE92561A874BF10083476C /* MasterViewController.m */,
+				84350E181A87718B00A925FF /* RMRecipeTableViewCell.h */,
+				84350E191A87718B00A925FF /* RMRecipeTableViewCell.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		84350E141A875D4E00A925FF /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				84350E151A875DC000A925FF /* Recipe.h */,
+				84350E161A875DC000A925FF /* Recipe.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
 		84CE923F1A874BF10083476C = {
 			isa = PBXGroup;
 			children = (
 				84CE924A1A874BF10083476C /* RMProject */,
 				84CE926A1A874BF10083476C /* RMProjectTests */,
 				84CE92491A874BF10083476C /* Products */,
+				A80F6DA77A763A4FACA9F602 /* Pods */,
+				866E1087B4DB760BBC97AB58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,14 +128,8 @@
 			children = (
 				84CE924F1A874BF10083476C /* AppDelegate.h */,
 				84CE92501A874BF10083476C /* AppDelegate.m */,
-				84CE92551A874BF10083476C /* MasterViewController.h */,
-				84CE92561A874BF10083476C /* MasterViewController.m */,
-				84CE92581A874BF10083476C /* DetailViewController.h */,
-				84CE92591A874BF10083476C /* DetailViewController.m */,
-				84CE925B1A874BF10083476C /* Main.storyboard */,
-				84CE925E1A874BF10083476C /* Images.xcassets */,
-				84CE92601A874BF10083476C /* LaunchScreen.xib */,
-				84CE92521A874BF10083476C /* RMProject.xcdatamodeld */,
+				84350E131A875D1500A925FF /* ViewControllers */,
+				84350E121A875D0500A925FF /* Model */,
 				84CE924B1A874BF10083476C /* Supporting Files */,
 			);
 			path = RMProject;
@@ -104,8 +138,12 @@
 		84CE924B1A874BF10083476C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				84CE925B1A874BF10083476C /* Main.storyboard */,
+				84CE925E1A874BF10083476C /* Images.xcassets */,
+				84CE92601A874BF10083476C /* LaunchScreen.xib */,
 				84CE924C1A874BF10083476C /* Info.plist */,
 				84CE924D1A874BF10083476C /* main.m */,
+				84350E111A875BD300A925FF /* RMProject-prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -127,6 +165,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		866E1087B4DB760BBC97AB58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A0523E83233814D99CF070B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A80F6DA77A763A4FACA9F602 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E532C03DD1C4DFAD27192155 /* Pods.debug.xcconfig */,
+				D9B72CDE2946F50DAA83A01F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84CE92711A874BF10083476C /* Build configuration list for PBXNativeTarget "RMProject" */;
 			buildPhases = (
+				99F1265D3220B684FD8AA170 /* Check Pods Manifest.lock */,
 				84CE92441A874BF10083476C /* Sources */,
 				84CE92451A874BF10083476C /* Frameworks */,
 				84CE92461A874BF10083476C /* Resources */,
+				5F8604881FC915789EDA7BB6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,15 +279,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5F8604881FC915789EDA7BB6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99F1265D3220B684FD8AA170 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84CE92441A874BF10083476C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84CE925A1A874BF10083476C /* DetailViewController.m in Sources */,
+				84350E171A875DC000A925FF /* Recipe.m in Sources */,
 				84CE92571A874BF10083476C /* MasterViewController.m in Sources */,
 				84CE92511A874BF10083476C /* AppDelegate.m in Sources */,
 				84CE92541A874BF10083476C /* RMProject.xcdatamodeld in Sources */,
+				84350E1A1A87718B00A925FF /* RMRecipeTableViewCell.m in Sources */,
 				84CE924E1A874BF10083476C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,8 +442,11 @@
 		};
 		84CE92721A874BF10083476C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E532C03DD1C4DFAD27192155 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RMProject/RMProject-prefix.pch";
 				INFOPLIST_FILE = RMProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,8 +455,11 @@
 		};
 		84CE92731A874BF10083476C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9B72CDE2946F50DAA83A01F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RMProject/RMProject-prefix.pch";
 				INFOPLIST_FILE = RMProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,6 +519,7 @@
 				84CE92731A874BF10083476C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84CE92741A874BF10083476C /* Build configuration list for PBXNativeTarget "RMProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +528,7 @@
 				84CE92761A874BF10083476C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
