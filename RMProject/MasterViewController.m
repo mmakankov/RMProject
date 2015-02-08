@@ -71,12 +71,11 @@
 }
 
 - (void)configureCell:(RMRecipeTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-    Recipe *object = (Recipe *)[self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.idLabel.text = object.recipeId.stringValue;
-    cell.titleLabel.text = object.name;
-    cell.cooktimeLabel.text = object.cooktime.stringValue;
-    cell.caloriesLabel.text = object.calories.stringValue;
     
+    Recipe *object = (Recipe *)[self.fetchedResultsController objectAtIndexPath:indexPath];
+    cell.titleLabel.text = object.name;
+    cell.cooktimeLabel.text = [NSString stringWithFormat:@"%@ min", object.cooktime];
+    cell.caloriesLabel.text = [NSString stringWithFormat:@"%@ cal", object.calories];
     [cell.recipeImageView setImageWithURL:[NSURL URLWithString:object.image]
                    placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
 }
@@ -111,10 +110,7 @@
     
 	NSError *error = nil;
 	if (![self.fetchedResultsController performFetch:&error]) {
-	     // Replace this implementation with code to handle the error appropriately.
-	     // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
 	    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-	    abort();
 	}
     
     return _fetchedResultsController;
@@ -172,15 +168,5 @@
 {
     [self.tableView endUpdates];
 }
-
-/*
-// Implementing the above methods to update the table view in response to individual changes may have performance implications if a large number of changes are made simultaneously. If this proves to be an issue, you can instead just implement controllerDidChangeContent: which notifies the delegate that all section and object changes have been processed. 
- 
- - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
-{
-    // In the simplest, most efficient, case, reload the table view.
-    [self.tableView reloadData];
-}
- */
 
 @end

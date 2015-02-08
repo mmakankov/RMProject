@@ -36,18 +36,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="id" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECW-ea-Fbr">
-                                            <rect key="frame" x="184" y="18" width="14" height="20"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMs-F0-Nbj">
-                                            <rect key="frame" x="184" y="47" width="33" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cooktime" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPx-pW-A7X">
                                             <rect key="frame" x="532" y="9" width="60" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -67,17 +55,21 @@
                                                 <constraint firstAttribute="width" constant="168" id="oXj-xq-cu4"/>
                                             </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMs-F0-Nbj">
+                                            <rect key="frame" x="184" y="39" width="33" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="lMs-F0-Nbj" firstAttribute="centerY" secondItem="e3Z-hj-JsC" secondAttribute="centerY" constant="-0.5" id="44g-AT-9gQ"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="yvc-8Q-esd" secondAttribute="bottom" constant="-2" id="ESA-dx-2w1"/>
-                                        <constraint firstItem="ECW-ea-Fbr" firstAttribute="leading" secondItem="e3Z-hj-JsC" secondAttribute="trailing" constant="8" id="H7E-vm-SkL"/>
                                         <constraint firstItem="EPx-pW-A7X" firstAttribute="top" secondItem="d3P-M7-ByW" secondAttribute="topMargin" constant="1" id="KMs-ki-1q1"/>
                                         <constraint firstItem="lMs-F0-Nbj" firstAttribute="leading" secondItem="e3Z-hj-JsC" secondAttribute="trailing" constant="8" id="McW-DE-XRU"/>
                                         <constraint firstItem="e3Z-hj-JsC" firstAttribute="top" secondItem="d3P-M7-ByW" secondAttribute="topMargin" id="NBN-Hb-9jk"/>
                                         <constraint firstItem="e3Z-hj-JsC" firstAttribute="leading" secondItem="d3P-M7-ByW" secondAttribute="leadingMargin" id="Nfg-p0-iQX"/>
-                                        <constraint firstItem="ECW-ea-Fbr" firstAttribute="top" secondItem="d3P-M7-ByW" secondAttribute="topMargin" constant="10" id="NmG-VH-KAi"/>
                                         <constraint firstItem="EPx-pW-A7X" firstAttribute="trailing" secondItem="d3P-M7-ByW" secondAttribute="trailingMargin" id="OJM-Fk-EPx"/>
-                                        <constraint firstItem="lMs-F0-Nbj" firstAttribute="top" secondItem="ECW-ea-Fbr" secondAttribute="top" constant="29" id="gWp-LV-IYI"/>
                                         <constraint firstItem="yvc-8Q-esd" firstAttribute="trailing" secondItem="d3P-M7-ByW" secondAttribute="trailingMargin" id="sWu-jA-qQl"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -85,7 +77,6 @@
                                 <connections>
                                     <outlet property="caloriesLabel" destination="yvc-8Q-esd" id="BBa-yo-OMz"/>
                                     <outlet property="cooktimeLabel" destination="EPx-pW-A7X" id="avn-Ju-og8"/>
-                                    <outlet property="idLabel" destination="ECW-ea-Fbr" id="m4D-oI-ldn"/>
                                     <outlet property="recipeImageView" destination="e3Z-hj-JsC" id="baN-NK-bOx"/>
                                     <outlet property="titleLabel" destination="lMs-F0-Nbj" id="1ZU-hJ-qzi"/>
                                 </connections>

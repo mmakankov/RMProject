@@ -11,7 +11,6 @@
 @interface RMRecipeTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *recipeImageView;
-@property (weak, nonatomic) IBOutlet UILabel *idLabel;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *cooktimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *caloriesLabel;
